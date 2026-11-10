@@ -38,7 +38,7 @@ Both models were evaluated on the same 5,027-headline validation split. Precisio
 
 | Model | Accuracy | Clickbait precision | Clickbait recall | Clickbait F1 |
 |---|---:|---:|---:|---:|
-| TF-IDF + Logistic Regression | 90.05% | 90.26% | 83.66% | 86.84% |
+| TF-IDF + Logistic Regression | 88.28% | 88.51% | 80.56% | 84.35% |
 | Fine-tuned DistilBERT | 92.04% | 90.81% | 88.69% | 89.73% |
 
 DistilBERT made 400 validation errors compared with 500 for TF-IDF + Logistic Regression. Its main gain was recall: it missed fewer clickbait headlines (223 false negatives versus 322), while false positives were nearly the same (177 versus 178). These are preliminary results; they show better performance on this split, but do not by themselves prove that contextual understanding caused the improvement.
